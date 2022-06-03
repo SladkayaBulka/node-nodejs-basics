@@ -1,3 +1,1 @@
-export const parseEnv = () => {
-    // Write your code here 
-};
+export const parseEnv = () => {};
