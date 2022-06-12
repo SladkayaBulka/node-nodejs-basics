@@ -1,3 +1,9 @@
 export const parseEnv = () => {
-    // Write your code here 
+  Object.keys(process.env).forEach((variabel) => {
+    if (/^RSS_/.test(variabel)) {
+      console.log(`${variabel}=${process.env[variabel]}`);
+    }
+  });
 };
+
+parseEnv();
