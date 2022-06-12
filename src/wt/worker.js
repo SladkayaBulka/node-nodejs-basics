@@ -7,3 +7,5 @@ export const nthFibonacci = (n) =>
 export const sendResult = () => {
   parentPort.postMessage(nthFibonacci(workerData));
 };
+
+sendResult();
